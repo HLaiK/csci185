@@ -2,4 +2,21 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Your code here */
+header {
+    background-color: #408263;
+    padding: 30px;
+}
+
+section {
+    display:inline-block;
+    padding: 20px;
+}
+
+section < p {
+    background-color: #white;
+}
+
+main{
+    background-color: #eee;
+}
+
