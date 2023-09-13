@@ -10,13 +10,18 @@ header {
 section {
     display:inline-block;
     padding: 20px;
+    border: solid 1px #000;
+    margin-bottom: 10px;
+    margin-top: 50px;
 }
 
-section < p {
-    background-color: #white;
+section {
+    background-color: #fff;
+    margin-top:50px ; 
 }
 
 main{
-    background-color: #eee;
+    background-color: #808080
+    ;
 }
 
