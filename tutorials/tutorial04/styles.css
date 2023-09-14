@@ -10,6 +10,15 @@ body {
     padding: 60px 15vw;
 }
 
+p{
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+header, section, footer{
+    padding: 60px 5vw;
+}
+
 header{
     background: #f4f4f4;
     height: 150px;
