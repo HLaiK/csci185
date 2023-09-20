@@ -1,11 +1,14 @@
 body {
     margin: 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 header {
     background-color: #45425a;
     color: white;
     padding: 20px;
+    margin-left: 15vw;
+    margin-right: 15vw;
 }
 
 footer {
@@ -13,6 +16,11 @@ footer {
     padding: 30px;
     margin-top: 30px;
     text-align: center;
+    font-weight: bold;
+}
+
+main > p  {
+    font-weight: bold;
 }
 
 ol {
@@ -37,9 +45,23 @@ code {
     padding: 10px;
 }
 
+#card1 , #card3 , #card5 {
+    background-color: #EEEEEE;
+    
+}
+
+#card1 img, #card3 img, #card5 img{
+    border-radius: 50% ;
+}
+
+#card2 , #card4 , #card6{
+    background-color: #bce5d6;
+}
+
 .card img {
     width: 100%;
     border: solid 2px #000;
+    
 }
 
 footer {
