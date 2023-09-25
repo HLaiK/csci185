@@ -1,0 +1,31 @@
+img{
+    width: 200px;
+}
+
+nav{
+    border: solid 1px  grey;
+}
+
+header , footer{
+    background-color: #FFDBE9;
+}
+
+#boba{
+   text-align: right;
+}
+
+#sec1, #sec2, #sec3, #sec4{
+    margin-right: 35px;
+    margin-left: 35px;
+    width: 300px;
+    display: inline-block;
+    border: solid 1px grey;
+}
+
+#sec2, #sec4{
+    background-color: #ffc0cb;
+}
+
+#sec1, #sec3{
+    background-color: #ffd7dd;
+}
