@@ -3,6 +3,21 @@ body * {
     box-sizing: border-box;
 }
 
+main, section{
+    border: solid 1px black;
+}
+
+main {
+    display:flex;
+    justify-content: space-around;
+    column-gap: 10px;
+}
+
+section{
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+}
 /*
 ----------
 Properties

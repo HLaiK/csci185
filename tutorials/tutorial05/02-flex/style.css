@@ -12,3 +12,34 @@ body {
 }
 
 /* create additional rules below:  */
+section{
+    height:100vh ;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+#home{
+    /* background-color: #4C5760; */
+    background-color: #CAD2C5 ;
+    color: #354F52 ;
+}
+
+#bio{
+    /* background-color:#93A8AC ; */
+    background-color: #84A98C;
+    color: #52796F;
+}
+
+#portfolio{
+    /* background-color: #D7CEB2 ; */
+    background-color: #52796F;
+    color:#84A98C;
+}
+
+#contact{
+    /* background-color:#A59E8C ; */
+    background-color: #354F52;
+    color: #CAD2C5;
+}

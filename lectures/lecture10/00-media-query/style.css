@@ -16,6 +16,7 @@ body {
     background-color: snow;
     margin: 0 auto;
     max-width: 1000px;
+    /* display: flex; */
 }
 
 header, main, footer {
@@ -34,8 +35,25 @@ main {
 footer {
     height: 10vh;
 }
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     /* Your code here! */
+    body{
+        background-color: rgb(247, 236, 236);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /* Your code here! */
+    header{
+        background-color: black;
+        color:white;
+    }
+    footer{
+        background-color: orange;
+        color: white;
+    }
+    body{
+        background-color: lightgray;
+    }
 }
 
