@@ -1,15 +1,128 @@
 /* You're welcome to change any of this! */
+
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Nanum+Myeongjo&family=Rajdhani:wght@300&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color:#B6D1A5 ;
+    font-family:Rajdhani;
+    background-color:#a8b99d ;
 }
 
+a , a:visited{
+    color:rgb(6, 64, 26);
+    font-weight: bold;
+}
 p, a, li {
     line-height: 1.5em;
     font-size: 1.1em;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+header img{
+    width: 20vw;
+    height: 30vh;
+
+}
+
+.left{
+    transform: scaleX(-1);
+}
+
+header{
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 20% 3fr 20%;
+    border: solid 4px rgb(250, 247, 236);
+    color:rgb(229, 229, 208) ;
+    font-size: 40px;
+    text-decoration: underline 4px;
+   
+}
+
+li{
+    color:rgb(6, 64, 26);
+}
+
+.main{
+    background-color: white;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    column-gap: 10px;
+}
+
+.main h2{
+    text-align: center;
+    text-decoration: underline rgb(180,178, 173);
+}
+
+.tutorials{
+    background-color: #ebedcd;
+}
+
+
+
+.tutorials p{
+    color:rgb(6, 64, 26);
+    font-weight: bolder;
+}
+
+.homework{
+    background-color: #ebedcd;
+}
+
+.class-exercises{
+    background-color: #ebedcd;
+}
+
+.quizes{
+    background-color: #ebedcd;
+}
+
+.inspiration{
+    background-color: #ebedcd;
+}
+
+ footer{    
+    border:solid 4px rgb(250, 247, 236);
+    text-align: center;
+    color:rgb(250, 247, 236);
+    font-weight: bold;
+} 
+
+@media screen and (max-width: 500px) {
+    .container
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    header img{
+        width:23vw ;
+        height: 20vh ;
+    }
+
+    header{
+       font-size: 20px;
+       text-align: center;
+    }
+
+    .main{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
 }

@@ -3,17 +3,22 @@
 <html lang="en">
    <head>
         <!-- stylesheets and metadata go here -->
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
        <title>Laiza's Homepage</title>       
        <link rel="stylesheet" href="styles.css">
    </head>
    <body>
+    <div class="container">
        <!-- HTML content tags go here. Change anything you want! -->
        <header>
-           <h1>My CSCI 185 Homepage</h1>
+        <img class="left" src="./icons/header-icon.PNG" alt="sprout"> <h1>My CSCI 185 Homepage</h1>
+        <img class="right" src="./icons/header-icon.PNG" alt="sprout">
        </header> 
-       <main>
-            <section id="tutorials">
+       <div class="main">
+            <div class="tutorials">
                 <h2>Tutorials</h2>
+                <!-- <img class="sprout1" src="./icons/tutorial-icon.PNG" alt="sprout"> -->
+
                 <ul>
                     <li> 
                         <a href="tutorials/tutorial02/index.html"> Tutorial 2: My First Webpage </a> 
@@ -24,25 +29,22 @@
                     <li>
                         <a href="tutorials/tutorial04/index.html"> Tutorial 4: My Bakery</a>
                     </li>
-                    <li>
-                        Tutorial 5: Flex
-                        <ul>
-                            <li>
-                               <a href="tutorials/tutorial05/01-flexbox-froggy/Screenshot 2023-09-27 163102.png">Flexbox Froggy screenshot</a>
-                            </li>
-                            <li>
-                                <a href="tutorials/tutorial05/02-flex/index.html">Colorful sections</a>
-                            </li>
-                            <li>
-                                <a href="tutorials/tutorial05/03-navbar/index.html">Navbar</a>
-                            </li>
-                        </ul>
-                    </li>
+                    <p>Tutorial 5: Flex</p> 
+                        <li>
+                            <a href="tutorials/tutorial05/01-flexbox-froggy/Screenshot 2023-09-27 163102.png">Flexbox Froggy screenshot</a>
+                        </li>
+                        <li>
+                            <a href="tutorials/tutorial05/02-flex/index.html">Colorful sections</a>
+                        </li>
+                        <li>
+                            <a href="tutorials/tutorial05/03-navbar/index.html">Navbar</a>
+                        </li>
                 </ul>
-
-            </section>
-            <section id="homework">
+                
+            </div>
+            <div class="homework">
                 <h2>Homework</h2>
+                <!-- <img class="sprout2" src="./icons/homework-icon.PNG" alt="sprout"> -->
                 <ul>
                     <h3> Homework 2</h3>
                     <li> <a href=".//homework/hw02/task01/index.html"> Task 1</a>
@@ -56,8 +58,32 @@
                     <li> <a href=".//homework/hw03/exercise03/index.html"> Task 2</a>
                     </li>
                 </ul>
-            </section>
-            <section id="inspiration">
+            </div>
+            <div class="class-exercises">
+                <!-- <img class="sprout3" src="./icons/class-excerises-icon.PNG" alt="sprout"> -->
+                <h2>Class Exercises</h2>
+                <ul>
+                    <li>
+                        <a href = "lectures/lecture04/index.html"> Lecture 4 </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="quizes">
+                <!-- <img class="sprout4" src="./icons/quizzes-icon.PNG" alt="sprout"> -->
+                <h2>Quizzes</h2>
+                <ul>
+                    <li>
+                        <a href="./practice-quiz01/index.html">Study Guide Quiz 01</a>
+                    </li>
+                    <li>
+                        <a href="./quizzes/quiz01/index.html"> Quiz 1</a>
+                    </li>
+                </ul>
+            </div>
+            
+            
+            <div class="inspiration">
+                <!-- <img class="sprout5" src="./icons/design-inspo-icon.PNG" alt="sprout"> -->
                 <h2>Design Inspiration</h2>
                 <ul>
                     <li>
@@ -86,26 +112,11 @@
                         Great place to find fonts.
                     </li>
                 </ul>
-            </section>
-            <section id="class-exercises">
-                <h2>Class Exercises</h2>
-                <ul>
-                    <li>
-                        <a href = "lectures/lecture04/index.html"> Lecture 4 </a>
-                    </li>
-                </ul>
-            </section>
-            <section id="quizes">
-                <h2>Quizzes</h2>
-                <ul>
-                    <li>
-                        <a href="./practice-quiz01/index.html">Study Guide Quiz 01</a>
-                    </li>
-                    <li>
-                        <a href="./quizzes/quiz01/index.html"> Quiz 1</a>
-                    </li>
-                </ul>
-            </section>
-        </main>
+            </div>
+        </div>
+        <footer>
+            <p> Copyright H'Laiza Ktul 2023</p>
+        </footer>
+    </div>
    </body>
 </html>

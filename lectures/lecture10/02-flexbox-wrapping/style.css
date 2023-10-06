@@ -13,11 +13,7 @@ main {
     column-gap: 10px;
 }
 
-section{
-    width: 30%;
-    padding: 10px;
-    margin: 10px;
-}
+
 /*
 ----------
 Properties
@@ -30,14 +26,24 @@ flex-wrap: 		    (no-wrap, wrap)
 
 
 
-
+section{
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+}
 
 
 @media only screen and (max-width: 1000px) {
     /* Your code here */
+   section{
+    width: calc(50% - 20px)
+   }
 }
 
 @media only screen and (max-width: 600px) {
     /* Your code here */
+    section {
+        width: 100%;
+    }
+
 }
 
