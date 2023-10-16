@@ -89,7 +89,15 @@ footer {
     font-size: large;
 }
 
+aside > a{
+    border: solid 3px transparent;
+    padding: 10px;
+}
 
+aside > a:hover, 
+aside > a.selected{
+    border-left: solid 3.5px #1DB954;
+}
 
 
 
@@ -170,13 +178,26 @@ h2{
     margin:0;
 }
 
+button:hover{
+    background-color: #1DB954;
+}
 
 
 /*****************/
 /* Mobile Design */
 /*****************/
-@media screen and (max-width: 1000px) {}
+@media screen and (max-width: 1000px) {
+    #featured-content{
+       display: flex;
+       /* flex-flow: row wrap; */
+    }
+    
+}
 
 
 
-@media screen and (max-width: 700px) {}
+@media screen and (max-width: 700px) {
+    #sidebar{
+        
+    }
+}

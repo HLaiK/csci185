@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Nanum+Myeongjo&family=Orbitron&family=Passion+One&family=Rajdhani:wght@300&display=swap');
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2 , h3{
+    font-family: passion one;
+}
+
+h1{
+    text-align: center;
+    margin-top: 30px;
+}
+
+h2{
+    margin-top: 80px;
+}
+
+header, main, footer {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+header {
+    background-color: #013672;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+}
+
+header img, footer img {
+    width: 200px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    align-content: center;
+    margin-top: 80px;
+    padding: 10px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns:repeat(2, 50%) ;
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+.card{
+    display: grid;
+    grid-template-columns:2fr 1fr;
+    padding: 15px;
+    border:solid 1px black;
+    display: grid;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card:hover{
+    background-color: #013672;
+    color: white;
+    transition:all 1s;
+}
+
+@media screen and (max-width: 800px){
+    .cards{
+        grid-template-columns: 1fr;
+    }
+
+    nav{
+        display: none;
+    }
+    
+}
