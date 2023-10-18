@@ -89,17 +89,23 @@ footer {
     font-size: large;
 }
 
+#sidebar a{
+    color:#dadada;
+}
+#sidebar a:hover{
+    color:white;
+}
+
 aside > a{
     border: solid 3px transparent;
     padding: 10px;
+  
 }
 
 aside > a:hover, 
 aside > a.selected{
     border-left: solid 3.5px #1DB954;
 }
-
-
 
 
 /********************************/
@@ -116,11 +122,20 @@ header{
 }
 
 #upgrade{
-    border: solid 1px white;
+    border: solid 1px rgb(201, 201, 201);
     border-radius: 120px;
     padding: 10px 25px;
     text-transform: uppercase;
+    background-color:#111;
 }
+
+#upgrade:hover{
+    filter: brightness(2);
+}
+#profile:hover{
+    filter: brightness(2);
+}
+
 #profile{
     font-weight: bold;
     background-color: #212121;
@@ -132,6 +147,7 @@ nav{
     column-gap: 20px;
     padding: 10px 20px;
 }
+
 
 nav > a{
     text-transform: uppercase;
@@ -162,6 +178,7 @@ nav > a.selected{
     background-color: #212121;
     border-radius: 5%;
     padding: 15px;
+    margin-bottom: 20px;
 }
 
 .artist-card img{
@@ -178,26 +195,75 @@ h2{
     margin:0;
 }
 
-button:hover{
+.artist-card:hover button{
+    display:block;
+}
+
+button{
     background-color: #1DB954;
+    border-radius: 50%;
+    color: white;
+    padding: 15px 20px;
+    margin-left: 130px;
+    margin-bottom: 15px;
+    display: none;
 }
 
 
 /*****************/
 /* Mobile Design */
 /*****************/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
+   
     #featured-content{
-       display: flex;
-       /* flex-flow: row wrap; */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 0%;
+        padding: 0%;
     }
-    
+    .artist-card{
+        max-width:160px ;
+        min-width: 160px;
+        max-height: 250px;
+        font-size: small;
+    }
+    .artist-card h2{
+        font-size: small;
+    }
+    button{
+        padding:10px 15px;
+        margin-left: 90px;
+        margin-bottom: 15px;
+    }
 }
 
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
+    main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #featured-content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-left: 15px;
+    }
+    .artist-card{
+        min-width: 220px;
+        max-width: 220px;
+        max-height: 290px;
+    }
+    #upgrade{
+        display: none;
+    }
     #sidebar{
-        
+        display: none;
+    }
+    button{
+        margin-left: 140px;
+        margin-top: -25px;
     }
 }
