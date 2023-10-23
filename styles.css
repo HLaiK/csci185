@@ -101,7 +101,16 @@ li{
     color:rgb(250, 247, 236);
     font-weight: bold;
 } 
-
+/* @media screen and (max-width: 800px) {
+    header img{
+        margin-top: 10px;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows:auto ;
+    }
+} */
 @media screen and (max-width: 500px) {
     .container
     {

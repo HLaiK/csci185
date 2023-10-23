@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Nanum+Myeongjo&family=Rajdhani:wght@300&display=swap');
+
+body {
+    margin: 0px;
+    font-family:Rajdhani;
+    background-color:white ;
+}
+
+nav , nav a:visited{
+    color:rgb(6, 64, 26) ;
+    font-weight:bold;
+    padding: 50px 10px;
+    margin-top: -20px;
+    background-color: #ebedcd;
+}
+
+nav a, nav:visited{
+    margin-left: 5px;
+    margin-right:10px;
+}
+
+main{
+    background-color: #a8b99d;
+}
