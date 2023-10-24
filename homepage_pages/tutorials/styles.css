@@ -6,12 +6,24 @@ body {
     background-color:white ;
 }
 
+img{
+    width: 10%;
+}
+
+header p {
+    font-size: 30px;
+}
+
 nav , nav a:visited{
     color:rgb(6, 64, 26) ;
     font-weight:bold;
     padding: 50px 10px;
     margin-top: -20px;
     background-color: #ebedcd;
+}
+a , a:visited{
+    color:rgb(6, 64, 26) ;
+    font-weight:bold;
 }
 
 nav a, nav:visited{
@@ -20,5 +32,27 @@ nav a, nav:visited{
 }
 
 main{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: auto;
+    padding: 10px;
+    gap: 10px ;
+}
+
+section {
     background-color: #a8b99d;
+    padding: 10px 10px;
+    font-weight: bold;
+}
+
+section a{
+    font-size: 20px;
+}
+
+.tut2{
+    grid-column: 1 ;
+}
+
+.tut3{
+    grid-column: 2/3;
 }
