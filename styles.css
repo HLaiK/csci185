@@ -114,6 +114,11 @@ li{
     background-color: #ebedcd;
 }
 
+.quizes p {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
 .inspiration{
     background-color: #ebedcd;
 }
