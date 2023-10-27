@@ -8,6 +8,7 @@ body {
 
 img{
     width: 10%;
+    margin-bottom: -3px;
 }
 
 header p {
@@ -15,12 +16,13 @@ header p {
 }
 
 nav , nav a:visited{
-    color:rgb(6, 64, 26) ;
+    color:rgb(229, 229, 208);
     font-weight:bold;
     padding: 50px 10px;
     margin-top: -20px;
-    background-color: #ebedcd;
+    background-color: #a8b99d;
 }
+
 a , a:visited{
     color:rgb(6, 64, 26) ;
     font-weight:bold;
@@ -31,28 +33,50 @@ nav a, nav:visited{
     margin-right:10px;
 }
 
+.fall{
+    font-weight: bold;
+}
+
 main{
     display: grid;
-    grid-template-columns: repeat(4,25%);
-    grid-template-rows: auto;
+    grid-template-columns: 60% 40%;
     padding: 10px;
     gap: 10px ;
+    margin-top: -50px;
 }
 
 section {
-    background-color: #a8b99d;
+    background-color: #ebedcd;
     padding: 10px 10px;
     font-weight: bold;
+}
+section h3{
+    font-size: 28px;
+    margin-bottom: -15px;
 }
 
 section a{
     font-size: 20px;
 }
 
-.tut2{
-    grid-column: 1 ;
+.recent h1{
+    font-size: 40px;
+    margin-bottom: -20px;
+    text-align: center;
 }
 
-.tut3{
-    grid-column: 2/3;
+.past{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+footer{
+    padding: 20px 10px;
+    margin-top: 80px;
+    background-color: #a8b99d;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color:rgb(229, 229, 208);
 }
