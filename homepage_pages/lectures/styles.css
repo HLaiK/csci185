@@ -11,7 +11,7 @@ nav , nav a:visited{
     font-weight:bold;
     padding: 50px 10px;
     margin-top: -20px;
-    background-color: #ebedcd;
+    background-color:  #a8b99d;
 }
 
 nav a, nav:visited{
@@ -20,5 +20,9 @@ nav a, nav:visited{
 }
 
 main{
-    background-color: #a8b99d;
+    background-color:#ebedcd;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    margin: 10px;
 }
+
