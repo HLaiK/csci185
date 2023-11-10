@@ -5,13 +5,26 @@ body {
     font-family:Rajdhani;
     background-color:white ;
 }
+img{
+    width: 10%;
+    margin-bottom: -3px;
+}
+
+header p {
+    font-size: 30px;
+}
 
 nav , nav a:visited{
-    color:rgb(6, 64, 26) ;
+    color:rgb(229, 229, 208) ;
     font-weight:bold;
     padding: 50px 10px;
     margin-top: -20px;
     background-color:  #a8b99d;
+}
+
+a , a:visited{
+    color:rgb(6, 64, 26) ;
+    font-weight:bold;
 }
 
 nav a, nav:visited{
@@ -19,10 +32,34 @@ nav a, nav:visited{
     margin-right:10px;
 }
 
-main{
-    background-color:#ebedcd;
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    margin: 10px;
+.fall{
+    font-weight: bold;
 }
 
+main{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 10px;
+    gap: 10px ;
+    margin-top: -45px;
+}
+
+section {
+    background-color: #ebedcd;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+section h3 {
+    margin-bottom: -5px;
+}
+
+footer{
+    padding: 20px 10px;
+    margin-top: 80px;
+    background-color: #a8b99d;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color:rgb(229, 229, 208);
+}
