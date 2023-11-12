@@ -23,6 +23,11 @@ function showImage() {
     console.log('Show image');
     const img = document.querySelector(".current-photo img");
     img.src = photos[idx];
+
+    const caption = document.querySelector{'.caption'};
+    const photoNumber = idx +1;
+    const totalPhotos = photos.length;
+    
 }
 
 
@@ -36,8 +41,8 @@ function forward() {
     console.log('forward');
     idx += 1;
     showImage();    
-   if (idx < idx -1){
-    idx = 0;
+   if (idx = idx + 1){
+    showImage();
    }
 }
 

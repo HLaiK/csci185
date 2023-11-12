@@ -65,12 +65,14 @@ footer{
 }
 
 @media screen and (max-width: 800px) {
-    .container
-    {
+    .container{
         display: grid;
         grid-template-columns: 1fr;
     }
 
+    nav{
+        font-size: 24px;
+    }
     header img{
         width:15vw ;
         height: 10vh ;
