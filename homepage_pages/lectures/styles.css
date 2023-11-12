@@ -63,3 +63,27 @@ footer{
     font-size: 20px;
     color:rgb(229, 229, 208);
 }
+
+@media screen and (max-width: 800px) {
+    .container
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    header img{
+        width:15vw ;
+        height: 10vh ;
+    }
+
+    header{
+       font-size: 20px;
+       text-align: center;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: repeat(3,33%);
+    }
+
+}
