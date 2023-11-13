@@ -40,16 +40,9 @@ function showImage() {
    the array, set idx to 0.
 */
 function forward() {
-    console.log('forward');
-    // idx = (idx + 1) % photos.length;
-    // showImage();    
-    if (idx = idx + 1 % photos.length){
-        showImage();
-    } else if (idx >= 10) {
-        let idx = 0;
-        showImage();
-    }
-     
+    console.log('forward')
+    idx = (idx + 1) % photos.length;
+    showImage();     
 }
     
 
@@ -66,7 +59,4 @@ function back() {
     console.log('back');
     idx = (idx - 1 + photos.length) % photos.length;
     showImage();  
-
-    
-
 }
