@@ -23,11 +23,13 @@ function showImage() {
     console.log('Show image');
     const img = document.querySelector(".current-photo img");
     img.src = photos[idx];
-
-    const caption = document.querySelector{'.caption'};
-    const photoNumber = idx +1;
-    const totalPhotos = photos.length;
     
+    const caption = document.querySelector('.caption');
+    const photoNumber = idx + 1;
+    const totalPhotos = photos.length;
+    console.log('Photo Number:', photoNumber);
+    console.log('Total Photos:', totalPhotos);
+    caption.textContent = `Image ${photoNumber} of ${totalPhotos}`;
 }
 
 
@@ -39,12 +41,17 @@ function showImage() {
 */
 function forward() {
     console.log('forward');
-    idx += 1;
-    showImage();    
-   if (idx = idx + 1){
-    showImage();
-   }
+    // idx = (idx + 1) % photos.length;
+    // showImage();    
+    if (idx = idx + 1 % photos.length){
+        showImage();
+    } else if (idx >= 10) {
+        let idx = 0;
+        showImage();
+    }
+     
 }
+    
 
 
 /* This function should set the idx variable 
@@ -53,12 +60,13 @@ function forward() {
    If the idx gets to the beginning, set idx to
    one less than the length of the array.
 */
+
+
 function back() {
     console.log('back');
-    idx -= 1;
-    showImage();
-    if (idx = 0){
-        idx -= 1;
-    }
-   
+    idx = (idx - 1 + photos.length) % photos.length;
+    showImage();  
+
+    
+
 }
