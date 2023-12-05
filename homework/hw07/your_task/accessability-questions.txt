@@ -1,0 +1,14 @@
+1. What corrections did you have to make, and how did you make them?
+
+- I had to create an alt text for the track, album and artist cards. I created a null variable "alt = "" " in the js file.
+- State the language used which I just included "<html lang="en">" at the very beginning of the html file.
+- I had to define the aria-label to "search for tracks" in the html file.
+
+2. Is this interface functional without the use of a mouse (i.e., just using keyboard keys)? Why or why not?
+
+- Yes it's functional all you have to do is hit tab and it'll work because of the "onfocus" variable that is not
+dependent on a mouse or keyboard. 
+
+3. What are other accessibility tests or features you added or would be interested in learning about?\
+
+- I would be interested in learning how to make a website more older folk friendly or about how to make a color-blind freindly websites. 

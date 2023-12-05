@@ -133,6 +133,10 @@ li{
 .inspiration{
     background-color: #ebedcd;
 }
+.inspiration p {
+    padding: 10px;
+    font-weight: bold;
+}
 
  footer{    
     border:solid 4px rgb(250, 247, 236);
