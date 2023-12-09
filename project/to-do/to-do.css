@@ -1,0 +1,35 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+body{
+    background: #a3c4a3;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    width: 500px;
+}
+.to-do-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    justify-content: center;
+}
+.todo-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    padding: 10px;
+    border-radius: 10px;
+}
+.todo-input{
+    border: none;
+    outline: none;
+    font-size: large;
+    background: transparent;
+  }
