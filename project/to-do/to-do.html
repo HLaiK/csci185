@@ -2,11 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="../../icons/header-icon.6.PNG">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do</title>
     <link rel="stylesheet" href="./to-do.css"/>
 </head>
     <body>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../journal/journal.html">Journal</a> 
+        </nav>
         <div class="container">
             <div class="to-do-header">
                 <h2>To Do List</h2>
@@ -16,9 +21,10 @@
                 id="todoText" 
                 class="todo-input" 
                 placeholder="Add Your Task" />
-                <i class="fa-solid fa-plus"></i>
+                <i onclick="addnew()" id="button" class="fa-solid fa-plus"></i>
             </div>  
-            <ul onclick="addnew()" id="list-items" class="list-items"></ul>
+            <ul id="list-items" class="list-items"></ul>
         </div>  
+        <script type="text/javascript" src="to-do.js"></script>
     </body>
 </html>

@@ -1,10 +1,33 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+
 body{
     background: #a3c4a3;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+nav{
+    margin-bottom: 20px;
+}
+nav a{
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    background:white;
+    padding: 10px 50px;
+    border-radius: 10px;
+}
+nav a:visited{
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    background:white;
+    padding: 10px 50px ;
+    border-radius: 10px;
 }
 .container{
     background: white;
@@ -32,4 +55,41 @@ body{
     outline: none;
     font-size: large;
     background: transparent;
+    padding: 15px 0; 
+  }
+  ul li{
+    list-style: none;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px;
+  }
+  li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-radius:5pc;
+  }
+  @media  screen and (max-width: 800px) {
+    body{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container{
+        width: 60vw;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container{
+        width: max-content;
+    }
   }

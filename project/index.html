@@ -50,11 +50,20 @@
             id="todoText" 
             class="todo-input" 
             placeholder="Add Your Task" />
-            <i class="fa-solid fa-plus"></i>
-
+            <i onclick="addnew()" id="button" class="fa-solid fa-plus"></i>
+            <ul  id="list-items" class="list-items"></ul>
           </div>  
-          <ul onclick="addnew()" id="list-items" class="list-items"></ul>
+          <br>
           <p>Journal</p>
+          <div class="journal">
+            <textarea 
+                rows="6" 
+                cols="95"
+                name="text"
+                id="notes"
+                class="entry-text-box"
+              ></textarea>
+          </div>
     </div>
     
   </div>
